@@ -2,6 +2,11 @@
 
 開発環境のWordPressサイトを操作しているのか、本番サイトのWordPressサイトを操作しているのかをわかりやすくするため、管理画面の色設定を強制的に変更するプラグインです。
 
+## ダウンロード
+GitHubのリリースページから最新のものをダウンロードしてください。
+
+[https://github.com/yosiakatsuki/ys-dev-admin-color/releases](https://github.com/yosiakatsuki/ys-dev-admin-color/releases)
+
 ## 使い方
 
 1. `config-sample.json`をコピー・リネームして`config.json`を作ります。
