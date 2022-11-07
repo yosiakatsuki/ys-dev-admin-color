@@ -1,0 +1,22 @@
+{
+  "name": "ys-dev-admin-color",
+  "version": "1.0.0",
+  "description": "開発環境のWordPressサイトを操作しているのか、本番サイトのWordPressサイトを操作しているのかをわかりやすくするため、管理画面の色設定を強制的に変更するプラグインです。",
+  "main": "index.js",
+  "scripts": {
+    "clear": "rm -rf ./ys-dev-admin-color",
+    "zip:copy": "rsync -a --exclude='.*' --exclude='/node_modules' --exclude='/config.json' --exclude='package*.json' . ys-dev-admin-color",
+    "zip:archive": "zip -9 -qmr ys-dev-admin-color.zip ys-dev-admin-color",
+    "zip": "npm run clear && npm run zip:copy && npm run zip:archive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yosiakatsuki/ys-dev-admin-color.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yosiakatsuki/ys-dev-admin-color/issues"
+  },
+  "homepage": "https://github.com/yosiakatsuki/ys-dev-admin-color#readme"
+}
